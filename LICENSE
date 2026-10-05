@@ -1,0 +1,66 @@
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+
+Copyright (c) 2026 huilongxiji
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike
+4.0 International License.
+
+You are free to:
+  - Share — copy and redistribute the material in any medium or format
+  - Adapt — remix, transform, and build upon the material
+
+Under the following terms:
+  - Attribution (BY) — You must give appropriate credit to the original author
+    (huilongxiji), provide a link to the license, and indicate if
+    changes were made. You may do so in any reasonable manner, but not in any
+    way that suggests the licensor endorses you or your use.
+  - NonCommercial (NC) — You may not use the material for commercial purposes.
+  - ShareAlike (SA) — If you remix, transform, or build upon the material, you
+    must distribute your contributions under the same license as the original.
+
+No additional restrictions — You may not apply legal terms or technological
+measures that legally restrict others from doing anything the license permits.
+
+Notices:
+  - You do not have to comply with the license for elements of the material in
+    the public domain or where your use is permitted by an applicable exception
+    or limitation.
+  - No warranties are given. The license may not give you all of the permissions
+    necessary for your intended use. For example, other rights such as publicity,
+    privacy, or moral rights may limit how you use the material.
+  - The licensor cannot revoke these freedoms as long as you follow the license
+    terms.
+
+Full legal text: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+================================================================================
+HOW TO ATTRIBUTE THIS PROJECT (引用声明格式)
+================================================================================
+
+When you use, fork, redistribute, or derive work from this project, you MUST
+include the following attribution in a NOTICE / README / About section that is
+visible to end users:
+
+  --------------------------------------------------------------------------
+  This product includes software developed by huilongxiji
+  (https://github.com/huilongxiji/twitter-sdk), licensed under
+  CC BY-NC-SA 4.0.
+  --------------------------------------------------------------------------
+
+If you modified the source, also add:
+  "Modifications: <describe what you changed>"
+
+================================================================================
+ADDITIONAL NOTES FOR THIS PROJECT
+================================================================================
+
+This project is a Twitter / X media download SDK. The LICENSE above applies
+to the SDK source code, documentation, examples, and configuration files.
+
+It does NOT cover:
+  - Downloaded media content (images, videos, GIFs) from Twitter / X. All
+    media content is the intellectual property of the original authors and
+    X Corp. Please respect the rights of content creators and comply with
+    the X Terms of Service and applicable local laws.
+  - User-provided configuration (e.g. config.toml containing personal
+    cookies, user lists) and any data the user downloads with this SDK.

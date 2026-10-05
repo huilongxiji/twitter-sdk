@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pyc
+.eggs/
+build/
+dist/
+
+# 虚拟环境
+.venv/
+.venv311/
+venv/
+env/
+
+# 敏感配置 (含真实 cookie / 用户列表)
+config.json
+user.json
+config.toml        # 若里面有真实 cookie 也建议先清空再上传, 或在 README 给样例
+# 如必须保留示例配置, 改名为 config.toml.example 再提交
+
+# 下载数据 (用户个人内容, 不应提交到公开仓库)
+download/
+推图/
+twitter_download/image/
+twitter_system/twitter_download/image/
+
+# 历史项目与备份
+twitter_download/
+twitter_system/
+twitter_ceshi.py
+twitter_download-main.zip
+压缩包/
+*.zip
+*.tar.gz
+
+# IDE
+.idea/
+.vscode/
+.cursor/
+*.iml
+.DS_Store
+.AppleDouble
+
+# Jupyter
+.ipynb_checkpoints/
+.ipython/
+.jupyter/
+*.ipynb
+
+# 日志与缓存
+*.log
+.cache/

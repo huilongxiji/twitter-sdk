@@ -1,0 +1,13 @@
+# twitter_sdk 静态配置 (TOML)
+# 本文件只存放"不经常改变的数值"。
+# 动态参数 (cookie / 用户名 / 保存路径 / 下载数量等) 请在构造或调用时注册, 不要写入本文件。
+
+# ---------- 抓取与输出 ----------
+time_range = "1990-01-01:2030-01-01"  # 时间范围限制, 空字符串表示不限
+down_log = true                       # 记录已下载内容, 避免重复下载
+autoSync = true                       # 基于本地已有内容自动同步最新部分
+image_format = "png"                   # orig / jpg / png
+log_output = true                     # 是否输出下载过程日志
+max_concurrent_requests = 8            # 最大并发数量
+md_output = true                      # 输出 Markdown 记录推文
+media_count_limit = 0                # 单个 md 文件中媒体链接数量上限 (0 不限)
