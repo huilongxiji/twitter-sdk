@@ -1,0 +1,34 @@
+# 让 twitter_sdk 可以被 pip / uv 直接从 GitHub 安装：
+#   uv add "twitter-sdk @ git+https://github.com/huilongxiji/twitter-sdk.git"
+#   pip install "git+https://github.com/huilongxiji/twitter-sdk.git"
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "twitter-sdk"
+version = "0.2.0"   # 和 __init__.py 里的 __version__ 保持一致
+description = "推特图片下载 SDK —— 提供异步 API 拉取用户推文与媒体"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "CC-BY-NC-SA-4.0"
+license-files = ["LICENSE"]
+authors = [{ name = "huilongxiji" }]
+dependencies = [
+    "httpx>=0.28,<1",                       # HTTP 客户端（核心）
+    "XClientTransaction==1.0.2",            # x-client-transaction-id 校验头（搜索接口需要）
+    "beautifulsoup4>=4.12",                 # XClientTransaction 解析 X 首页需要
+    "tomli>=1.2.0; python_version < '3.11'",  # 3.10 读取 config.toml
+    "imageio-ffmpeg>=0.6",                  # 动图 mp4 转 gif（自带 ffmpeg）
+]
+
+[project.urls]
+Repository = "https://github.com/huilongxiji/twitter-sdk"
+
+[tool.setuptools]
+# 仓库根目录本身就是 twitter_sdk 包（__init__.py 在根目录），examples/ 不打包
+package-dir = { "twitter_sdk" = "." }
+packages = ["twitter_sdk"]
+
+[tool.setuptools.package-data]
+twitter_sdk = ["config.toml"]   # SDK 从自己所在目录读取内置配置，必须一起打包
